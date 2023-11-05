@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Coding By Ali Aslan -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Word Scramble Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./word.js" defer></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h2>Word Scramble Game <span><i class="fa-solid fa-puzzle-piece"></i></span></h2>
+        <center><div class="startArea" onclick="start()"><button class="startBtn">Let`s Do it</button></div></center>
+
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>15</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+            <div class="score-area"><span>Score: </span><span class="score">0</span></div>
+        </div>
+    </div>
+
+    
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+    
+  </body>
+</html>
